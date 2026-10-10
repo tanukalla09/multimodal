@@ -1,0 +1,40 @@
+{
+  "file": "sp01_volume_drop_s4.wav",
+  "speech_id": "sp01",
+  "ideal_file": "sp01_ideal.wav",
+  "sr": 16000,
+  "duration": 85.44,
+  "seed": 42,
+  "overall_severity": 4,
+  "flaws": [
+    {
+      "type": "volume_drop",
+      "severity": 4,
+      "start": 30.49,
+      "end": 33.61,
+      "src_start": 30.49,
+      "src_end": 33.61,
+      "params": {
+        "gain_db": -12
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      30.49,
+      30.49
+    ],
+    [
+      33.61,
+      33.61
+    ],
+    [
+      85.44,
+      85.44
+    ]
+  ]
+}

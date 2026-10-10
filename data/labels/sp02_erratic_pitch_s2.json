@@ -1,0 +1,40 @@
+{
+  "file": "sp02_erratic_pitch_s2.wav",
+  "speech_id": "sp02",
+  "ideal_file": "sp02_ideal.wav",
+  "sr": 16000,
+  "duration": 66.07,
+  "seed": 7,
+  "overall_severity": 2,
+  "flaws": [
+    {
+      "type": "erratic_pitch",
+      "severity": 2,
+      "start": 19.3,
+      "end": 23.3,
+      "src_start": 19.3,
+      "src_end": 23.3,
+      "params": {
+        "wobble_semitones": 1.0
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      19.3,
+      19.3
+    ],
+    [
+      23.3,
+      23.3
+    ],
+    [
+      66.07,
+      66.07
+    ]
+  ]
+}

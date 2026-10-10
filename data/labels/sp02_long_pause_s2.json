@@ -1,0 +1,40 @@
+{
+  "file": "sp02_long_pause_s2.wav",
+  "speech_id": "sp02",
+  "ideal_file": "sp02_ideal.wav",
+  "sr": 16000,
+  "duration": 66.77,
+  "seed": 7,
+  "overall_severity": 2,
+  "flaws": [
+    {
+      "type": "long_pause",
+      "severity": 2,
+      "start": 57.2,
+      "end": 57.9,
+      "src_start": 57.2,
+      "src_end": 57.2,
+      "params": {
+        "pause_s": 0.7
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      57.2,
+      57.2
+    ],
+    [
+      57.2,
+      57.9
+    ],
+    [
+      66.07,
+      66.77
+    ]
+  ]
+}

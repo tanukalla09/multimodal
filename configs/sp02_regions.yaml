@@ -1,0 +1,21 @@
+# sp02 regions in seconds, in data/raw/sp02_ideal.wav. Chosen from pause gaps.
+# Source: data/source/sp02_source.wav, trimmed from 7.89 s (ideal_time = source_time - 7.89).
+# Silence gaps detected with: ffmpeg -af "silencedetect=noise=-35dB:d=0.4"
+# All positions verified to land inside speech segments; missing_pause region
+# contains a natural pause of ~0.50 s (at ideal 50.83-51.33 s).
+speech_id: sp02
+ideal: data/raw/sp02_ideal.wav
+seed: 7
+single_levels: [2, 4]
+single:
+  too_fast: {start: 9.00, end: 13.00}
+  monotone: {start: 7.70, end: 11.70}
+  volume_drop: {start: 36.80, end: 39.80}
+  erratic_pitch: {start: 19.30, end: 23.30}
+  too_slow: {start: 28.20, end: 32.50}
+  missing_pause: {start: 48.85, end: 52.20}
+  long_pause: {at: 57.20}
+combined:
+  - {type: too_slow, start: 3.20, end: 7.00}
+  - {type: erratic_pitch, start: 54.10, end: 57.10}
+  - {type: volume_drop, start: 14.22, end: 18.76}

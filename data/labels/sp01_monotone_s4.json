@@ -1,0 +1,40 @@
+{
+  "file": "sp01_monotone_s4.wav",
+  "speech_id": "sp01",
+  "ideal_file": "sp01_ideal.wav",
+  "sr": 16000,
+  "duration": 85.44,
+  "seed": 42,
+  "overall_severity": 4,
+  "flaws": [
+    {
+      "type": "monotone",
+      "severity": 4,
+      "start": 20.68,
+      "end": 25.0,
+      "src_start": 20.68,
+      "src_end": 25.0,
+      "params": {
+        "f0_scale": 0.2
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      20.68,
+      20.68
+    ],
+    [
+      25.0,
+      25.0
+    ],
+    [
+      85.44,
+      85.44
+    ]
+  ]
+}
