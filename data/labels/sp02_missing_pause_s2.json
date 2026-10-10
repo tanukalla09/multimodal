@@ -1,0 +1,40 @@
+{
+  "file": "sp02_missing_pause_s2.wav",
+  "speech_id": "sp02",
+  "ideal_file": "sp02_ideal.wav",
+  "sr": 16000,
+  "duration": 65.758,
+  "seed": 7,
+  "overall_severity": 2,
+  "flaws": [
+    {
+      "type": "missing_pause",
+      "severity": 2,
+      "start": 48.85,
+      "end": 51.888,
+      "src_start": 48.85,
+      "src_end": 52.2,
+      "params": {
+        "pause_cut": 0.4
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      48.85,
+      48.85
+    ],
+    [
+      52.2,
+      51.888
+    ],
+    [
+      66.07,
+      65.758
+    ]
+  ]
+}

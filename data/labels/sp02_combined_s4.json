@@ -1,0 +1,78 @@
+{
+  "file": "sp02_combined_s4.wav",
+  "speech_id": "sp02",
+  "ideal_file": "sp02_ideal.wav",
+  "sr": 16000,
+  "duration": 69.1791,
+  "seed": 7,
+  "overall_severity": 4,
+  "flaws": [
+    {
+      "type": "too_slow",
+      "severity": 4,
+      "start": 3.2,
+      "end": 10.1091,
+      "src_start": 3.2,
+      "src_end": 7.0,
+      "params": {
+        "tempo": 0.55
+      }
+    },
+    {
+      "type": "erratic_pitch",
+      "severity": 4,
+      "start": 57.2091,
+      "end": 60.2091,
+      "src_start": 54.1,
+      "src_end": 57.1,
+      "params": {
+        "wobble_semitones": 3.0
+      }
+    },
+    {
+      "type": "volume_drop",
+      "severity": 4,
+      "start": 66.1191,
+      "end": 69.1791,
+      "src_start": 63.01,
+      "src_end": 66.07,
+      "params": {
+        "gain_db": -12
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      3.2,
+      3.2
+    ],
+    [
+      7.0,
+      10.1091
+    ],
+    [
+      54.1,
+      57.2091
+    ],
+    [
+      57.1,
+      60.2091
+    ],
+    [
+      63.01,
+      66.1191
+    ],
+    [
+      66.07,
+      69.1791
+    ],
+    [
+      66.07,
+      69.1791
+    ]
+  ]
+}

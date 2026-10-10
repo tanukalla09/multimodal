@@ -1,0 +1,20 @@
+{
+  "file": "sp02_ideal.wav",
+  "speech_id": "sp02",
+  "ideal_file": "sp02_ideal.wav",
+  "sr": 16000,
+  "duration": 66.07,
+  "seed": 7,
+  "overall_severity": 0,
+  "flaws": [],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      66.07,
+      66.07
+    ]
+  ]
+}

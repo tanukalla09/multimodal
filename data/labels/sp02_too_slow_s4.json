@@ -1,0 +1,40 @@
+{
+  "file": "sp02_too_slow_s4.wav",
+  "speech_id": "sp02",
+  "ideal_file": "sp02_ideal.wav",
+  "sr": 16000,
+  "duration": 69.5882,
+  "seed": 7,
+  "overall_severity": 4,
+  "flaws": [
+    {
+      "type": "too_slow",
+      "severity": 4,
+      "start": 28.2,
+      "end": 36.0182,
+      "src_start": 28.2,
+      "src_end": 32.5,
+      "params": {
+        "tempo": 0.55
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      28.2,
+      28.2
+    ],
+    [
+      32.5,
+      36.0182
+    ],
+    [
+      66.07,
+      69.5882
+    ]
+  ]
+}

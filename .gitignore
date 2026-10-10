@@ -32,3 +32,5 @@ sp01*_bundle.zip
 hashes*.txt
 data/eval_results.json
 data/source/
+data/ab/
+sp02*_bundle.zip
