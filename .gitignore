@@ -31,3 +31,4 @@ configs/demo_regions.yaml
 sp01*_bundle.zip
 hashes*.txt
 data/eval_results.json
+data/source/
