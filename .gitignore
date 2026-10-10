@@ -1,14 +1,33 @@
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+.eslintcache
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python
 .venv/
 __pycache__/
 .pytest_cache/
+
+# Generated project data
 data/bad/
 data/plots/
 data/preds/
 data/preds_fake/
-data/raw/*_source.*
-data/raw/demo_*
-data/labels/demo_*
+data/raw/*source*
+data/raw/demo*
+data/labels/demo*
 configs/demo_regions.yaml
-sp0*_bundle.zip
+sp01*_bundle.zip
 hashes*.txt
 data/eval_results.json

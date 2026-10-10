@@ -1,0 +1,1098 @@
+/* ==========================================================================
+   VocalLens — Premium Product UI/UX Redesign
+   Figma-grade Editorial Analytics Interface
+   ========================================================================== */
+
+/* Main Page Container */
+.vl-app-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Top Navigation Bar
+   -------------------------------------------------------------------------- */
+.vl-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.vl-brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.vl-logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.25);
+  flex-shrink: 0;
+}
+
+.vl-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.vl-wordmark {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  line-height: 1.15;
+}
+
+.vl-wordmark span {
+  color: var(--brand-primary);
+}
+
+.vl-tagline {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.vl-nav-center {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vl-nav-anchor {
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.vl-nav-anchor:hover {
+  color: var(--brand-primary);
+  background: var(--bg-subtle);
+}
+
+.vl-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.vl-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid var(--border-default);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+}
+
+.vl-pill.demo {
+  background: var(--status-warning-bg);
+  color: var(--status-warning);
+  border-color: var(--status-warning-border);
+  font-weight: 600;
+}
+
+.vl-pill.status-online {
+  color: var(--status-success);
+  border-color: var(--status-success-border);
+  background: var(--status-success-bg);
+}
+
+.vl-pill.status-offline {
+  color: var(--text-muted);
+  border-color: var(--border-default);
+  background: var(--bg-subtle);
+}
+
+.vl-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Hero Introduction
+   -------------------------------------------------------------------------- */
+.vl-hero-section {
+  margin-bottom: 2.25rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.vl-hero-header {
+  max-width: 840px;
+}
+
+.vl-hero-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  line-height: 1.18;
+  margin-bottom: 0.65rem;
+}
+
+.vl-hero-subtitle {
+  font-size: 1.075rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.vl-feature-pills-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.vl-feature-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--brand-primary);
+  background: var(--brand-subtle);
+  border: 1px solid var(--brand-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+}
+
+/* Product Disclaimer Banner */
+.vl-disclaimer-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-left: 3px solid var(--brand-primary);
+  padding: 0.85rem 1.25rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.vl-disclaimer-content {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.vl-disclaimer-text {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+.vl-disclaimer-text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.vl-btn-subtle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.vl-btn-subtle:hover {
+  background: var(--bg-muted);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Core Card Layout System
+   -------------------------------------------------------------------------- */
+.vl-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-xs);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.vl-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.vl-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+
+.vl-card-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.vl-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.vl-card-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+/* Grid Layouts */
+.vl-dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.vl-two-column-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .vl-two-column-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Delivery Overview & Hierarchical Scores
+   -------------------------------------------------------------------------- */
+.vl-delivery-overview {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .vl-delivery-overview {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Hero Overall Score Card */
+.vl-hero-score-card {
+  background: linear-gradient(180deg, #ffffff 0%, var(--brand-subtle) 100%);
+  border: 1px solid var(--brand-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.vl-hero-score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.vl-hero-score-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand-primary);
+}
+
+.vl-hero-score-body {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.vl-hero-score-number {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.vl-hero-score-max {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.vl-hero-score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  font-size: 0.775rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
+.vl-hero-score-badge.high {
+  background: var(--status-success-bg);
+  color: var(--status-success);
+  border: 1px solid var(--status-success-border);
+}
+
+.vl-hero-score-badge.medium {
+  background: var(--status-warning-bg);
+  color: var(--status-warning);
+  border: 1px solid var(--status-warning-border);
+}
+
+.vl-hero-score-badge.low {
+  background: var(--status-danger-bg);
+  color: var(--status-danger);
+  border: 1px solid var(--status-danger-border);
+}
+
+.vl-hero-progress-track {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.vl-hero-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--brand-primary) 0%, #6366f1 100%);
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vl-hero-score-meta {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  border-top: 1px solid rgba(79, 70, 229, 0.15);
+  padding-top: 0.85rem;
+  margin-top: auto;
+}
+
+/* 4-Metric Secondary Score Grid */
+.vl-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .vl-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vl-metric-subcard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 1.15rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.15s ease;
+}
+
+.vl-metric-subcard:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-sm);
+}
+
+.vl-metric-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.vl-metric-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.vl-metric-value-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.vl-metric-number {
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.vl-metric-status {
+  font-size: 0.725rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.vl-metric-status.high {
+  background: var(--status-success-bg);
+  color: var(--status-success);
+}
+.vl-metric-status.medium {
+  background: var(--status-warning-bg);
+  color: var(--status-warning);
+}
+.vl-metric-status.low {
+  background: var(--status-danger-bg);
+  color: var(--status-danger);
+}
+
+.vl-meter-track {
+  height: 5px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.vl-meter-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.vl-meter-fill.high { background: var(--status-success); }
+.vl-meter-fill.medium { background: var(--status-warning); }
+.vl-meter-fill.low { background: var(--status-danger); }
+
+.vl-metric-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   Audio Workspace & Aligned Transcript
+   -------------------------------------------------------------------------- */
+.vl-dropzone {
+  border: 1.5px dashed var(--border-default);
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 1.25rem;
+}
+
+.vl-dropzone:hover,
+.vl-dropzone.drag-active {
+  border-color: var(--brand-primary);
+  background: var(--brand-subtle);
+}
+
+.vl-dropzone-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface);
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem auto;
+  border: 1px solid var(--border-default);
+}
+
+.vl-dropzone-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.vl-dropzone-guidance {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.vl-file-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-default);
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Audio Player */
+.vl-audio-player-surface {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.vl-player-controls-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.vl-btn-play {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--brand-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+  flex-shrink: 0;
+}
+
+.vl-btn-play:hover {
+  background: var(--brand-hover);
+  transform: scale(1.03);
+}
+
+.vl-btn-icon {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vl-btn-icon:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.vl-seeker-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.vl-range-slider {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  accent-color: var(--brand-primary);
+  cursor: pointer;
+}
+
+.vl-time-counter {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.vl-speed-select {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Words Alignment Track */
+.vl-aligned-words-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.vl-aligned-words-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+.vl-word-pill {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  transition: all 0.15s ease;
+}
+
+.vl-word-pill:hover {
+  border-color: var(--brand-primary);
+  background: var(--brand-subtle);
+}
+
+.vl-word-pill.active {
+  border-color: var(--brand-primary);
+  background: var(--brand-primary);
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(79, 70, 229, 0.2);
+}
+
+.vl-word-pill.active .vl-word-time {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.vl-word-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.vl-word-time {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.vl-transcript-textarea {
+  width: 100%;
+  height: 75px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  resize: vertical;
+  line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   Temporal Flaw Timeline (Signature Feature)
+   -------------------------------------------------------------------------- */
+.vl-timeline-canvas {
+  position: relative;
+  height: 90px;
+  background: #fbfaf8;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  margin: 1.25rem 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.vl-timeline-ruler-ticks {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+.vl-ruler-tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px dashed #e4e4e7;
+}
+
+.vl-ruler-label {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  font-variant-numeric: tabular-nums;
+}
+
+.vl-timeline-playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--brand-primary);
+  pointer-events: none;
+  z-index: 25;
+  box-shadow: 0 0 4px rgba(79, 70, 229, 0.4);
+  transition: left 0.05s linear;
+}
+
+.vl-playhead-cap {
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 10px;
+  height: 6px;
+  background: var(--brand-primary);
+  border-radius: 0 0 2px 2px;
+}
+
+.vl-flaw-segment {
+  position: absolute;
+  top: 14px;
+  bottom: 18px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.vl-flaw-segment:hover {
+  transform: translateY(-2px);
+  z-index: 15;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vl-flaw-segment.selected {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+  z-index: 20;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.2);
+}
+
+.vl-flaw-segment.severity-high {
+  background: #fee2e2;
+  border: 1px solid #f87171;
+  color: #991b1b;
+}
+
+.vl-flaw-segment.severity-medium {
+  background: #fef3c7;
+  border: 1px solid #fcd34d;
+  color: #92400e;
+}
+
+.vl-flaw-segment.severity-low {
+  background: #e0e7ff;
+  border: 1px solid #a5b4fc;
+  color: #3730a3;
+}
+
+.vl-flaw-segment-title {
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Flaw Region Cards Grid */
+.vl-flaw-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.vl-flaw-chip-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.vl-flaw-chip-card:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-subtle);
+}
+
+.vl-flaw-chip-card.selected {
+  border-color: var(--brand-primary);
+  background: var(--brand-subtle);
+}
+
+.vl-flaw-chip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vl-flaw-chip-type {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--text-primary);
+}
+
+.vl-flaw-severity-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-xs);
+}
+
+.vl-flaw-severity-badge.high { background: #fee2e2; color: #991b1b; }
+.vl-flaw-severity-badge.medium { background: #fef3c7; color: #92400e; }
+.vl-flaw-severity-badge.low { background: #e0e7ff; color: #3730a3; }
+
+.vl-flaw-chip-time {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* --------------------------------------------------------------------------
+   Flaw Diagnostic Panel
+   -------------------------------------------------------------------------- */
+.vl-diagnostics-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.vl-diag-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.vl-diag-meta-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
+}
+
+.vl-diag-meta-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
+.vl-diag-meta-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.vl-metric-delta-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+}
+
+.vl-delta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0.25rem 0;
+}
+
+.vl-explanation-card {
+  background: #fbfaf8;
+  border-left: 3px solid var(--status-warning);
+  border-top: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.vl-explanation-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--status-warning);
+  margin-bottom: 0.25rem;
+}
+
+.vl-btn-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: var(--brand-primary);
+  color: #ffffff;
+  padding: 0.55rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.825rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+
+.vl-btn-action:hover {
+  background: var(--brand-hover);
+}
+
+/* --------------------------------------------------------------------------
+   Feature Visualizations (Recharts)
+   -------------------------------------------------------------------------- */
+.vl-tabs-row {
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.vl-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-full);
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.vl-tab-btn:hover {
+  background: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+.vl-tab-btn.active {
+  background: var(--brand-primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.vl-chart-container {
+  width: 100%;
+  height: 330px;
+  background: var(--bg-surface);
+}
+
+/* --------------------------------------------------------------------------
+   Empty & Error States
+   -------------------------------------------------------------------------- */
+.vl-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  color: var(--text-muted);
+}
+
+.vl-empty-state p {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  max-width: 380px;
+}
+
+/* --------------------------------------------------------------------------
+   Minimal SaaS Footer
+   -------------------------------------------------------------------------- */
+.vl-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.825rem;
+  color: var(--text-muted);
+}
+
+.vl-footer-brand {
+  font-weight: 600;
+  color: var(--text-primary);
+}

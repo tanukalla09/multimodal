@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "duration": 3.0,
+    "sr": 16000
+  },
+  "words": [
+    {"w": "we", "start": 0.2, "end": 0.42},
+    {"w": "must", "start": 0.45, "end": 0.78},
+    {"w": "act", "start": 0.82, "end": 1.1},
+    {"w": "now", "start": 1.2, "end": 1.55}
+  ],
+  "features": {
+    "time": [0.0, 0.01, 0.02, 0.03, 0.04],
+    "f0_semitone": [0.1, 0.2, 0.1, -0.2, -0.3],
+    "energy_z": [0.1, 0.3, 0.2, -0.4, -0.6],
+    "speech_rate": [2.8, 2.8, 2.8, 2.8, 2.8]
+  },
+  "baseline_features": {
+    "time": [0.0, 0.01, 0.02, 0.03, 0.04],
+    "f0_semitone": [0.0, 0.4, 0.8, 0.4, 0.0],
+    "energy_z": [0.0, 0.2, 0.4, 0.2, 0.0],
+    "speech_rate": [3.0, 3.0, 3.0, 3.0, 3.0]
+  },
+  "flaws": [
+    {
+      "start": 1.2,
+      "end": 1.55,
+      "type": "monotone",
+      "severity": 0.6,
+      "metrics": {
+        "f0_range_delta": -0.7
+      },
+      "explanation": "Demo data: pitch variation is lower than the baseline."
+    }
+  ],
+  "scores": {
+    "pacing": 75,
+    "pitch": 60,
+    "volume": 80,
+    "pauses": 70,
+    "overall": 71
+  }
+}
