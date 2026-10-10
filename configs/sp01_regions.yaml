@@ -1,0 +1,16 @@
+# TEMPLATE for speech 1. Fill the times (seconds, in data/raw/sp01_ideal.wav) after
+# listening in Audacity. Rules: 3-5 s regions, on word boundaries, inside speech,
+# NOT overlapping, at least 1 s apart. long_pause uses a single point "at".
+speech_id: sp01
+ideal: data/raw/sp01_ideal.wav
+seed: 42
+single_levels: [2, 4]
+single:
+  too_fast:    {start: 10.0, end: 14.0}   # CHANGE
+  monotone:    {start: 22.0, end: 26.0}   # CHANGE
+  volume_drop: {start: 34.0, end: 38.0}   # CHANGE
+  long_pause:  {at: 46.0}                 # CHANGE (a gap between two words)
+combined:                                   # used for sp01_combined_s1 ... s5
+  - {type: monotone,    start: 6.0,  end: 10.0}   # CHANGE
+  - {type: too_fast,    start: 24.0, end: 28.0}   # CHANGE
+  - {type: volume_drop, start: 40.0, end: 44.0}   # CHANGE
