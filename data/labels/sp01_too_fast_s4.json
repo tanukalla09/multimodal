@@ -1,0 +1,40 @@
+{
+  "file": "sp01_too_fast_s4.wav",
+  "speech_id": "sp01",
+  "ideal_file": "sp01_ideal.wav",
+  "sr": 16000,
+  "duration": 83.9175,
+  "seed": 42,
+  "overall_severity": 4,
+  "flaws": [
+    {
+      "type": "too_fast",
+      "severity": 4,
+      "start": 3.35,
+      "end": 5.8875,
+      "src_start": 3.35,
+      "src_end": 7.41,
+      "params": {
+        "tempo": 1.6
+      }
+    }
+  ],
+  "time_map": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      3.35,
+      3.35
+    ],
+    [
+      7.41,
+      5.8875
+    ],
+    [
+      85.44,
+      83.9175
+    ]
+  ]
+}
