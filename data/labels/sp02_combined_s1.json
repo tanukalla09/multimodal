@@ -19,6 +19,17 @@
       }
     },
     {
+      "type": "volume_drop",
+      "severity": 1,
+      "start": 14.6423,
+      "end": 19.1822,
+      "src_start": 14.22,
+      "src_end": 18.76,
+      "params": {
+        "gain_db": -3
+      }
+    },
+    {
       "type": "erratic_pitch",
       "severity": 1,
       "start": 54.5222,
@@ -27,17 +38,6 @@
       "src_end": 57.1,
       "params": {
         "wobble_semitones": 0.5
-      }
-    },
-    {
-      "type": "volume_drop",
-      "severity": 1,
-      "start": 63.4323,
-      "end": 66.4922,
-      "src_start": 63.01,
-      "src_end": 66.07,
-      "params": {
-        "gain_db": -3
       }
     }
   ],
@@ -55,20 +55,20 @@
       7.4223
     ],
     [
+      14.22,
+      14.6423
+    ],
+    [
+      18.76,
+      19.1822
+    ],
+    [
       54.1,
       54.5222
     ],
     [
       57.1,
       57.5222
-    ],
-    [
-      63.01,
-      63.4323
-    ],
-    [
-      66.07,
-      66.4922
     ],
     [
       66.07,

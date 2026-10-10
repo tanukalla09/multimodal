@@ -80,5 +80,4 @@ truth; small float differences in audio length are within 2 ms.
   recorded yet.
 - erratic_pitch has not been validated with listener studies; the numerical
   QC report shows pitch spread changes but cannot confirm perceptibility.
-- Speaker sex for sp01 and sp02 is TODO pending confirmation from the LibriVox
-  catalogue or direct listening.
+- Speaker sex: sp01 speaker (Ernst Pattynama): male; sp02 speaker (Julia Niedermaier): female.

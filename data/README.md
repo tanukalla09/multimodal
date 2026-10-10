@@ -18,8 +18,8 @@ speaker 2). Speeches 3 and 4 and the acted set are not yet done; see Known Limit
 
 | Speech | Speaker (sex) | Text | Recording | Source file | Trim (source) | Licence |
 |--------|---------------|------|-----------|-------------|---------------|---------|
-| sp01 | Ernst Pattynama (TODO: male/female) | Gettysburg Address | LibriVox | gettysburgaddress_lincoln_eep_128kb.mp3 | 11.4 s to 96.84 s | Public Domain (LibriVox) |
-| sp02 | Julia Niedermaier (TODO: male/female) | Gettysburg Address | LibriVox | gettysburgaddress_lincoln_jn_128kb.mp3 | 7.89 s to 73.96 s | Public Domain (LibriVox) |
+| sp01 | Ernst Pattynama (male) | Gettysburg Address | LibriVox | gettysburgaddress_lincoln_eep_128kb.mp3 | 11.4 s to 96.84 s | Public Domain (LibriVox) |
+| sp02 | Julia Niedermaier (female) | Gettysburg Address | LibriVox | gettysburgaddress_lincoln_jn_128kb.mp3 | 7.89 s to 73.96 s | Public Domain (LibriVox) |
 
 LibriVox recordings are released into the public domain; modification is
 permitted. Original recordings are available at:
@@ -141,18 +141,31 @@ versions (WSOLA and PSOLA are deterministic but platform-dependent).
 
 ---
 
+## Proposing Regions for New Speeches (Speeches 3 and 4)
+
+To generate a draft regions configuration for a new reference audio file (e.g. speech 3):
+
+```bash
+python src/dataset/propose_regions.py data/raw/sp03_ideal.wav sp03 [--seed 42] [--out configs/sp03_regions.draft.yaml]
+```
+
+The tool detects pause boundaries using frame RMS energy, selects valid 3–5 s speech regions separated by at least 1.0 s, ensures the `missing_pause` region contains a pause > 0.15 s, keeps regions >= 6 s away from the clip end, spreads flaws across the recording, and outputs a draft YAML matching `configs/sp01_regions.yaml`.
+
+---
+
 ## QC Report Summary
 
 The file `data/qc_report.md` contains objective measurements for every
 flawed file vs its ideal counterpart.
 
 Results (run 2026-10-10):
-- **49 PASS** out of 49 testable flaw instances (0 FAIL)
-- **9 MEASURED** (erratic_pitch: no pass/fail threshold; effect has never
-  been measured before; manual listening required)
+- **50 PASS** out of 58 flaw instances
+- **1 FAIL** (`sp01_monotone_s2.wav`: pitch spread ratio is 1.053 vs expected 0.60 +/- 0.25)
+- **7 WEAK** (`sp02` erratic_pitch across combined and single series: fails monotonic trend or effect at s4 is below 50% of expected size)
 
-> These numbers do NOT replace listening. See `data/qc_report.md` for the
-> full table and methodology.
+> These numbers do NOT replace listening. Pitch figures in `validate.py` use a simple
+> homemade tracker and are not reliable; the Praat (Parselmouth) figures in `data/qc_report.md`
+> are the ones to trust. See `data/qc_report.md` for the full table and methodology.
 
 ---
 
@@ -168,6 +181,6 @@ Results (run 2026-10-10):
   results in qc_report.md require listening to confirm.
 - **Filler words excluded**: transcripts do not include "um", "uh", etc.
   because including them would change the canonical text.
-- **Speaker sex**: TODO for both sp01 and sp02.
+- **Speaker sex**: sp01 speaker (Ernst Pattynama): male; sp02 speaker (Julia Niedermaier): female.
 - **Single machine reproducibility**: byte-identical audio only on same
   OS + same scipy/parselmouth versions.

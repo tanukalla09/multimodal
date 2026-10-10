@@ -18,4 +18,4 @@ single:
 combined:
   - {type: too_slow, start: 3.20, end: 7.00}
   - {type: erratic_pitch, start: 54.10, end: 57.10}
-  - {type: volume_drop, start: 63.01, end: 66.07}
+  - {type: volume_drop, start: 14.22, end: 18.76}
